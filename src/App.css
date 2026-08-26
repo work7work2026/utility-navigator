@@ -932,3 +932,255 @@ font-size:11px;
 color:#667085;
 
 }
+
+@media (max-width: 700px) {
+  .route-panel {
+    top: auto;
+    bottom: 12px;
+    left: 12px;
+    right: 12px;
+    width: auto;
+
+    /* Responsive height */
+    max-height: clamp(240px, 48vh, 420px);
+
+    overflow-y: auto;
+  }
+
+  .utility-count {
+    display: none;
+  }
+}
+/* Short screens */
+@media (min-width: 701px) and (max-height: 700px) {
+  .route-panel {
+    max-height: calc(100vh - 110px);
+    padding: 14px;
+  }
+
+  .route-stats {
+    margin: 10px 0;
+  }
+
+  .direction-item {
+    padding: 7px 0;
+  }
+}
+
+/* Very short screens */
+@media (min-width: 701px) and (max-height: 550px) {
+  .route-panel {
+    max-height: calc(100vh - 90px);
+    padding: 12px;
+  }
+
+  .route-panel-header h2 {
+    font-size: 16px;
+  }
+
+  .route-stats > div {
+    min-height: 48px;
+    padding: 8px;
+  }
+
+  .direction-item {
+    padding: 6px 0;
+  }
+}
+
+/* =========================================
+   FINAL RESPONSIVE LAYOUT
+   ========================================= */
+
+/* -----------------------------------------
+   SMALL LAPTOP / SHORT DESKTOP
+   ----------------------------------------- */
+
+@media (min-width: 701px) and (max-height: 750px) {
+
+  .route-panel {
+    top: 12px;
+    left: 12px;
+
+    width: 320px;
+
+    max-height: calc(100vh - 24px);
+
+    padding: 13px;
+
+    overflow-y: auto;
+  }
+
+  .route-stats {
+    margin: 10px 0;
+  }
+
+  .route-stats > div {
+    min-height: 50px;
+    padding: 8px;
+  }
+
+  .direction-item {
+    padding: 7px 0;
+  }
+
+  .utility-list-panel {
+    max-height: 300px;
+    overflow-y: auto;
+  }
+}
+
+
+/* -----------------------------------------
+   VERY SHORT LAPTOP
+   ----------------------------------------- */
+
+@media (min-width: 701px) and (max-height: 600px) {
+
+  .route-panel {
+    width: 300px;
+    max-height: calc(100vh - 20px);
+
+    padding: 11px;
+  }
+
+  .route-panel-header h2 {
+    font-size: 16px;
+  }
+
+  .route-stats {
+    margin: 7px 0;
+  }
+
+  .route-stats > div {
+    min-height: 44px;
+    padding: 7px;
+  }
+
+  .direction-item {
+    padding: 5px 0;
+  }
+
+  .direction-content strong {
+    font-size: 10px;
+  }
+}
+
+
+/* -----------------------------------------
+   MOBILE
+   ----------------------------------------- */
+
+@media (max-width: 700px) {
+
+  /* Utility selector */
+  .utility-panel {
+    top: 74px;
+    left: 12px;
+    right: 12px;
+
+    width: auto;
+
+    max-height: 30vh;
+
+    overflow-y: auto;
+  }
+
+
+  /* Nearby utility list */
+  .utility-list-panel {
+    top: 140px;
+    left: 12px;
+    right: 12px;
+
+    width: auto;
+
+    max-height: 30vh;
+
+    overflow-y: auto;
+  }
+
+
+  /* Route panel */
+  .route-panel {
+    top: auto;
+
+    left: 12px;
+    right: 12px;
+    bottom: 12px;
+
+    width: auto;
+
+    max-height: 30vh;
+    min-height: 0;
+
+    padding: 12px;
+
+    overflow-y: auto;
+
+    box-sizing: border-box;
+  }
+
+
+  /* Route header */
+  .route-panel-header h2 {
+    font-size: 15px;
+    line-height: 1.2;
+  }
+
+  .route-panel-header p {
+    font-size: 9px;
+  }
+
+
+  /* Route statistics */
+  .route-stats {
+    gap: 6px;
+    margin: 9px 0;
+  }
+
+  .route-stats > div {
+    min-height: 42px;
+    padding: 7px;
+    gap: 7px;
+  }
+
+  .route-stats strong {
+    font-size: 13px;
+  }
+
+
+  /* Directions */
+  .direction-heading {
+    margin: 4px 0 5px;
+    padding-bottom: 6px;
+    font-size: 11px;
+  }
+
+  .direction-item {
+    padding: 6px 0;
+    gap: 7px;
+  }
+
+  .direction-number {
+    width: 23px;
+    height: 23px;
+    min-width: 23px;
+    font-size: 9px;
+  }
+
+  .direction-content strong {
+    font-size: 9px;
+    line-height: 1.3;
+  }
+
+  .direction-content span {
+    font-size: 8px;
+  }
+
+
+  /* Hide floating utility count on mobile */
+  .utility-count {
+    display: none;
+  }
+}
